@@ -1,0 +1,122 @@
+<html> 
+<head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/GA1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title></title>
+</head>
+<body>
+    <style>
+          .text-content {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: center;
+        color: #d9d8d8;
+        padding: 1rem 2rem;
+        max-width: 90%; /* Adjust based on your layout needs */
+        text-shadow:
+            3px 3px 0 #fbeeee,
+            -1px -1px 0 #eae0e0,  
+            1px -1px 0 #fef4f4,
+            -1px 1px 0 #fdf6f6,
+            1px 1px 0 #fefdfd;
+        margin: 30px auto;
+
+        
+    }
+
+    
+    .text-content p {
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 20px; /* Add space between paragraphs */
+
+    }
+
+    </style>
+  
+  <div class="container2">
+    <video autoplay loop muted playsinline class="background-clip">
+        <source src="sumber/video/back.mp4" type="video/mp4">
+    </video>
+
+    <div class="content2">
+        <h1>
+            <a href="index.html">HOME</a>
+            <a href="SHOP.html">FASHION</a>
+        </h1>
+        <div class="text-content">
+        <p>CDIM144 4E</p>
+        <p>IML254: COLLEGE OF COMPUTING, INFORMATICS AND MATHEMATICS STUDIES</p>
+        <p> INTRODUCTION TO WEB CONTENT DEVELOPMENT</p>
+        <p>SUBMISSION DATE:30 APRIL 2024</p>
+        </div>
+        <div class="row2">
+            <div class="column2">
+                <div class="card2">
+                    <div class="image-container2">
+                        <img src="sumber/image/afif.jpg"  onclick="openModal(this)" >
+                    </div>
+                    <h2 class="title2">Source Agent</h2>
+                    <p>AFIF IRFAN BIN ZAIDI </p>
+                    <p>(2022697478)</p>
+                    <p>EMAIL: 2022697478@student.uitm.edu.my</p>
+                    <p>PHONE: +60 16-640 7375</p>
+                </div>
+            </div>
+            <div class="column2">
+                <div class="card2">
+                    <div class="image-container2">
+                        <img src="sumber/image/adam.jpg"  onclick="openModal(this)">
+                    </div>
+                    <h2 class="title2">Coding Developer</h2>
+                    <p>ADAM ISKANDAR BIN ZULKARNINE</p>
+                    <p> (2022642664)</p>
+                    <p>EMAIL: adam.iskandar.zulkarnine@gmail.com</p>
+                    <p>PHONE: +60 13-384 4604</p>
+                </div>
+            </div>
+            <div class="column2">
+                <div class="card2">
+                    <div class="image-container2">
+                        <img src="sumber/image/tasya.jpg"  onclick="openModal(this)">
+                    </div>
+                    <h2 class="title2"> Photo Editor</h2>
+                    <p>NOR NATASHABILLA BINTI ABDULLAH </p>
+                    <p>(2022873952)</p>
+                    <p>EMAIL: tashabella04@gmail.com</p>
+                    <p>PHONE: +60 11-1765 5625</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal2">
+  <span class="close2" onclick="closeModal()">&times;</span>
+  <img class="modal2-content2" id="modal2-img">
+  <div id="caption2"></div>
+</div>
+
+<script>
+  function openModal(element) {
+      var modal = document.getElementById("myModal");
+      var modalImg = document.getElementById("modal2-img");
+      var captionText = document.getElementById("caption");
+      
+      modal.style.display = "flex";
+      modalImg.src = element.src;
+      captionText.innerHTML = element.alt;
+  }
+
+  function closeModal() {
+      var modal = document.getElementById("myModal");
+      modal.style.display = "none";
+  }
+</script>
+
+  </body>
+  </html>
