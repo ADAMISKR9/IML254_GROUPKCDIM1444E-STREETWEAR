@@ -1,0 +1,224 @@
+<html> 
+<head> 
+  <link rel="stylesheet" href="css/GA1.css">
+  <title>woomen boots</title>
+</head>
+<body> 
+    <style>
+        .header1 {
+        opacity: 0.6;  
+        padding: 15px;
+        text-align: center;
+        background-image: url('sumber/image/ktm.jpg');
+        color: rgb(9, 9, 9);
+        font-family: Felix Titling;
+        font-size: 25px;
+      }
+    
+      body {
+        background-image: url('sumber/image/back 2.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
+        </style>
+            
+    
+    
+        <div id="headerContent">
+            <video autoplay loop muted playsinline class="background-clip">
+                <source src="sumber/video/back.mp4" type="video/mp4">
+            </video>
+        </div>
+        
+        
+        
+     <!-- The navigation menu -->
+    <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="SHOP.html">SHOP</a>
+      <a href="GROUP.html">GROUP</a>
+  
+  
+  <div class="dropdown">
+      <button class="dropbtn">Men's
+          <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+          <div class="row1">
+              <div class="column1">
+                  <h3><a href="AM.html">ALL</a></h3>
+                  <h3>#CLOTHING</h3>
+                  <ul class="list-style-square">
+                    <li><a href="man tshirts.html">TSHIRTS</a></li>
+                    <li><a href="man pants.html">PANTS</a></li>
+                    <li><a href="man shorts.html">SHORTS</a></li>
+                    <li><a href="man jeans.html">JEANS</a></li>
+                    <li><a href="man hoodies.html">HOODIES</a></li>
+                </ul>
+            </div>
+            <div class="column1">
+              <h3>#FOOOTWEAR</h3>
+              <ul class="list-style-square">
+                  <li><a href="man boots.html">BOOTS</a></li>
+                  <li><a href="man sneakers.html">SNEAKERS</a></li>
+                  <li><a href="man sandals.html">SANDALS </a></li>
+              </ul>
+            </div>
+            <div class="column1">
+              <h3>#ACCESSORIES</h3>
+              <ul class="list-style-square">
+                  <li><a href="man bags.html">BAGS</a></li>
+                  <li><a href="man socks.html">SOCKS</a></li>
+                  <li><a href="man headwear.html">HEADWEAR</a></li>
+              </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Women's
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+        <div class="row1">
+            <div class="column1">
+               <h3><a href="AW.html">ALL</a></h3>
+                <h3>#CLOTHING</h3>
+                <ul class="list-style-square">
+                    <li><a href="women tshirts.html">TSHIRTS</a></li>
+                    <li><a href="women shorts.html">SHORTS</a></li>
+                    <li><a href="women jeans.html">JEANS</a></li>
+                    <li><a href="women hoodies.html">HOODIES</a></li>
+                </ul>
+            </div>
+            <div class="column1">
+              <h3>#FOOOTWEAR</h3>
+              <ul class="list-style-square">
+                  <li><a href="women heels.html">HEELS</a></li>
+                  <li><a href="women sneakers.html">SNEAKERS</a></li>
+                  <li><a href="women sandals.html">SANDALS </a></li>
+              </ul>
+            </div>
+            <div class="column1">
+              <h3>#ACCESSORIES</h3>
+              <ul class="list-style-square">
+                  <li><a href="women hats.html">HATS</a></li> 
+                  <li><a href="women bags.html">BAGS</a></li>
+                  <li><a href="women sunglasess.html">SUNGLASESS</a></li>
+                  <li><a href="women purses.html">PURSES</a></li>
+              </ul>
+            </div>
+          </div>
+       </div>
+    </div>
+</div>
+    
+      
+
+      <div class="header1">
+        <h1>woomen boots</h1>
+      </div>
+
+
+      
+      <div class="row">
+        <div class="column clothing">
+            <div class="content">
+                <div class="image-container">
+                    <img src="sumber/image/women boots (1).jpg"  onclick="openModal(this)">
+                </div>
+            </div>
+        </div>
+        <div class="column clothing">
+          <div class="content">
+              <div class="image-container">
+                  <img src="sumber/image/women boots.jpg"  onclick="openModal(this)">
+              </div>
+          </div>
+      </div>
+      <div class="column clothing">
+        <div class="content">
+            <div class="image-container">
+                <img src="sumber/image/women boots (2).jpg"  onclick="openModal(this)">
+            </div>
+        </div>
+    </div>
+    <div class="column clothing">
+      <div class="content">
+          <div class="image-container">
+              <img src="sumber/image/women boots (4).jpg"  onclick="openModal(this)">
+          </div>
+      </div>
+  </div>
+  <div class="column clothing">
+    <div class="content">
+        <div class="image-container">
+            <img src="sumber/image/women boots (3).jpg" onclick="openModal(this)">
+        </div>
+    </div>
+</div>
+  </div>  
+    
+    
+    
+    
+    
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+
+<script>
+// Filter images based on category
+function filterSelection(category) {
+    var columns = document.getElementsByClassName("column");
+    if (category == "all") category = "";
+    for (var i = 0; i < columns.length; i++) {
+        columns[i].classList.remove("show");
+        if (columns[i].className.indexOf(category) > -1) columns[i].classList.add("show");
+    }
+
+    var btnContainer = document.getElementById("btnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].classList.remove("active");
+        if (btns[i].innerText.toLowerCase() === category || (category === "" && btns[i].innerText.toLowerCase() === "show all")) {
+            btns[i].classList.add("active");
+        }
+    }
+}
+
+// Open modal with the clicked image
+function openModal(element) {
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    modal.style.display = "flex";
+    modalImg.src = element.src;
+    captionText.innerHTML = element.alt;
+}
+
+// Close the modal
+function closeModal() {
+    var modal = document.getElementById("myModal");
+    modal.style.display = "none";
+}
+
+// Initialize the gallery with 'all' category shown
+document.addEventListener("DOMContentLoaded", function() {
+    filterSelection('all');
+});
+</script>
+
+
+
+
+        
+        
+</body> 
+</html>
